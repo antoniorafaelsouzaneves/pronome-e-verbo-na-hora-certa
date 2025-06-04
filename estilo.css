@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #1900ff, #ff00d9);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover {
+    transform: scale(1.03);
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#butaojogar1 {
+    display: block;
+    width: 160px;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 30px;
+    border: none;
+    background-color: #00aaff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#butaojogar1:hover {
+    background-color: #007acc;
+    transform: scale(1.1);
+}
+
+#btnsorteio,
+#btnenviar {
+    background-color: #00aaff;
+    color: white;
+    width: 140px;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+#btnsorteio:hover,
+#btnenviar:hover {
+    background-color: #007acc;
+    transform: scale(1.05);
+}
+
+#inputresposta {
+    display: block;
+    width: 70%;
+    max-width: 500px;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    background-color: #f0f0f0;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+#inputresposta:focus {
+    box-shadow: 0 0 10px #00aaff;
+}
+
+.sorteio {
+    background-color: white;
+    color: #333;
+    width: 90%;
+    max-width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dica {
+    background-color: #00aaff;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.div5 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#pontos,
+#rodada {
+    background: linear-gradient(135deg, #ff0099, #ffcc00); 
+    width: 150px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;              
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;                
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+#pontos:hover,
+#rodada:hover {
+    transform: scale(1.1);       
+}
+
+
+/* Tablet: até 768px */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    margin-top: 50px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  .div1, .div2, .div3, .div4, .div5 {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  #inputresposta {
+    width: 90%;
+    max-width: none;
+    font-size: 18px;
+  }
+
+  #btnsorteio,
+  #btnenviar,
+  #butaojogar1 {
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .sorteio {
+    max-width: 100%;
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .dica {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .div5 {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #pontos,
+  #rodada {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+/* Celular: até 480px */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .div1, .div2, .div3, .div4, .div5 {
+    width: 98%;
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  #inputresposta {
+    width: 95%;
+    font-size: 16px;
+    height: 45px;
+  }
+
+  #btnsorteio,
+  #btnenviar,
+  #butaojogar1 {
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+
+  .sorteio {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .dica {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .div5 {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  #pontos,
+  #rodada {
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+
+
+

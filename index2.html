@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronome e Verbo na Hora Certa!</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="ico/faviconjogo.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Pronome e Verbo na Hora Certa!</h1>
+    <div class="div2">
+        <h3>Como funciona o jogo!</h3>
+
+        <p>🎯 O objetivo do jogo é montar uma frase correta usando três elementos: um pronome, um verbo regular e o tipo de frase (afirmativa, interrogativa ou negativa).
+
+🧩 Exemplo:
+"he + study + afirmativa" → He studies every day.
+
+💡 Você receberá dicas ao longo do jogo, pois já existe uma frase pronta para cada combinação possível.
+Sua missão é apenas montá-la corretamente!
+
+✅ Cada acerto vale 1 ponto. Se você alcançar 10 pontos, vence a rodada! 🏆
+
+🎲 Vamos jogar?
+Para começar, é só clicar em “Sortear”! 🎉
+        </p>
+    </div>
+    <h3>Pronome e Verbo na Hora Certa 🎯</h3>
+
+    <div class="div3">
+
+<button id="btnsorteio">Sortear</button>
+        <div class="sorteio">
+             <h2 style="color: black; text-align: center; margin-top: 10px;" id="sorteiopalavra"></h2>
+        </div>
+
+       <div class="dica" style="display: flex; flex-direction: column; align-items: center;">
+    <h3 style="text-align: center;">Dicas! 💡</h3>
+    <p id="dicasparagrafo" style="font-size: 20px; color: black; font-family: Arial, Helvetica, sans-serif; margin-top: 10px; max-width: 90%; text-align: justify; word-wrap: break-word;">
+        
+    </p>
+</div>
+
+
+    </div>
+
+     <h3>Boa Sorte! Nas Respostas 👻👻</h3>
+
+    <div class="div4">
+
+        
+            <h4>Resposta 👇</h4>
+            
+            <input type = "text" placeholder="Coloque a frase aqui..." id="inputresposta">
+        
+        <button id="btnenviar">Enviar</button>
+    </div>
+
+
+    <h3>Pontuações 🚀</h3>
+
+    <div class="div5">
+        <p style="margin-top: 10px; margin-right: 10px; color: white;">Pontos: </p>
+
+
+            <div id="pontos" style="margin-bottom: 10px;">
+             <h2 style="color: black; text-align: center; margin-top: 10px;">0</h2>
+          </div>
+
+       
+        
+        <p style="margin-top: 10px; margin-right: 10px; color: white;">Rodadas Ganhas: </p>
+
+        <div id="rodada">
+            <h2 style="color: black; text-align: center; margin-top: 10px;">0</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
